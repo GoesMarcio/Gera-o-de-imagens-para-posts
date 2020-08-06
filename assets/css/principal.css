@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgba(40, 44, 52);
+}
+
+.left{
+    background-color: rgb(33, 37, 43);
+    width: 300px;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.left h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    padding: 15px 0px;
+    width: 250px;
+    margin: auto;
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left input, .left textarea {
+    background-color: rgba(255, 255, 255, 0.075);
+    border: 0px;
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding: 0px 15px !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.left textarea {
+    padding: 15px !important;
+    height: 150px;
+    min-height: 100px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.left #upload{
+    display: none;
+}
+
+.left .upload div{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 8px;
+    cursor: pointer;
+    border: dashed 2px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.left .upload div::after{
+    content: "\f093";
+    font: 36px FontAwesome;
+    color: rgba(255, 255, 255,0.3);
+}
+
+.left .upload div.preview{
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.left .upload div.preview::after{
+    content: "";
+}
+small{
+    width: 240px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    font-weight: 300;
+}
+.left .label{
+    width: 240px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.left .label i{
+    margin-right: 3px;
+}
+
+.left button{
+    background-color: rgb(29, 31, 35);
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.left button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right{
+    background-color: rgb(33, 37, 43);
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+}
+
+.right h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    padding: 15px 0px;
+    width: 250px;
+    margin: auto;
+}
+
+.right .container_bgs{
+    width: 250px;
+    margin: auto;
+}
+
+.right .container_bgs div{
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.right .container_bgs div:nth-child(odd) {
+    margin-right: 10px;
+}
+.right .container_bgs div.active{
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(255,255,255,.4);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(255,255,255,.4);
+    box-shadow: 0px 0px 0px 4px rgba(255,255,255,.4);
+}
+.right .container_bgs .bg1 {
+    background-image: url('../bg_roxo.png');
+}
+.right .container_bgs .bg2 {
+    background-image: url('../bg_rosa.png');
+}
+.right .container_bgs .bg3 {
+    background-image: url('../bg_amarelo.png');
+}
+.right .container_bgs .bg4 {
+    background-image: url('../bg_pattern.png');
+}
+
+.center {
+    width: calc(100% - 600px);
+    height: 100%;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center.clear::after {
+    content: "Sua imagem irá aparecer aqui quando for criada!";
+    color: rgba(255, 255, 255,0.3);
+    font-weight: 200;
+    font-size: 24px;
+}
